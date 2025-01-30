@@ -20,6 +20,7 @@ public class TipoDeDadosPrimitivos {
 
 	public static void main(String[] args) {
 		// EXEMPLOS DE USO:
+		
 		byte idade = 29; 
 		short populacao = 6780;
 		int codigo = 12342;
