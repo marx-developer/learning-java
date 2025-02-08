@@ -4,7 +4,7 @@ Este repositório foi criado com a finalidade de registra minha jornada de apren
 
 Os códigos estão organizados de acordo com os temas abordados durante os estudos:
 
-## Fundamentos
+## Introdução
 
 - [Estrutura Básica](/modulo1-fundamentos/src/secao1_introducao/EstruturaBasica.java) 
 - [Comentários](/modulo1-fundamentos/src/secao1_introducao/)
@@ -14,10 +14,7 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Conversão de Tipos (casting)](modulo1-fundamentos/src/secao1_introducao/ConversaoDeTipos.java)
 - [Entrada de Dados](modulo1-fundamentos/src/secao1_introducao/EntradaDeDados.java)
 - [Saída de Dados](modulo1-fundamentos/src/secao1_introducao/SaidaDeDados.java)
-- [Operadores Aritméticos](modulo1-fundamentos/src/secao1_introducao/OperadoresAritmeticos.java)
-- [Operadores Lógicos](modulo1-fundamentos/src/secao1_introducao/OperadoresLogicos.java)
-- [Operadores Relacionais](modulo1-fundamentos/src/secao1_introducao/OperadoresRelacionais.java)
-- [Operador Ternário](modulo1-fundamentos/src/secao1_introducao/OperadorTernario.java)
+- [Operadores: Aritméticos, Atribuição, Comparação e Lógicos ](modulo1-fundamentos/src/secao1_introducao/Operadores.java)
 
 ## Estruturas de Controle
 
