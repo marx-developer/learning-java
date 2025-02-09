@@ -19,6 +19,7 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Operadores de Comparação ](modulo1-fundamentos/src/secao1_introducao/OperadoresComparacao.java)
 - [Operadores Lógicos ](modulo1-fundamentos/src/secao1_introducao/OperadoresLogicos.java)
 - [String](modulo1-fundamentos/src/secao1_introducao/TipoString.java)
+- [Operações Matemáticas](modulo1-fundamentos/src/secao1_introducao/OperacoesMatematicas.java)
 
 ## Estruturas de Controle
 
