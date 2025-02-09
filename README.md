@@ -12,9 +12,12 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Tipo de Dados Primitivos](/modulo1-fundamentos/src/secao1_introducao/TipoDeDadosPrimitivos.java)
 - [Tipo de Dados Não Primitivos](modulo1-fundamentos/src/secao1_introducao/TipoDeDadosPrimitivos.java)
 - [Conversão de Tipos (casting)](modulo1-fundamentos/src/secao1_introducao/ConversaoDeTipos.java)
+- [Operadores Aritméticos ](modulo1-fundamentos/src/secao1_introducao/OperadoresArtmeticos.java)
+- [Operadores de Atribuição ](modulo1-fundamentos/src/secao1_introducao/OperadoresAtribuicao.java)
+- [Operadores de Comparação ](modulo1-fundamentos/src/secao1_introducao/OperadoresComparacao.java)
+- [Operadores Lógicos ](modulo1-fundamentos/src/secao1_introducao/OperadoresLogicos.java)
 - [Entrada de Dados](modulo1-fundamentos/src/secao1_introducao/EntradaDeDados.java)
 - [Saída de Dados](modulo1-fundamentos/src/secao1_introducao/SaidaDeDados.java)
-- [Operadores: Aritméticos, Atribuição, Comparação e Lógicos ](modulo1-fundamentos/src/secao1_introducao/Operadores.java)
 
 ## Estruturas de Controle
 
