@@ -23,8 +23,16 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 
 ## Estruturas de Controle
 
-- [Condicionais (if, else, switch)]()
-- [Loops (for, forEach, while e do-while)]()
+- [Estrutura condicional if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIf.java)
+- [Estrutura condicional if-else](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElse.java)
+- [Estrutura condicional if-else if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElseIf.java)
+- [Estrutura Condicional switch](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalSwitch.java)
+- [Operador Ternário](modulo1-fundamentos/src/secao2_estruturas_de_controle/OperadorTernario.java)
+- [Estrutura de repetição for](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopFor.java)
+- [Estrutura de repetição while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopWhile.java)
+- [Estrutura de repetição do-while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopDoWhile.java)
+- [Estrutura de repetição for-each](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopForEach.java)
+- 
 
 ## Classes, Objetos e Métodos
 
