@@ -26,43 +26,54 @@
 
 package secao1_introducao;
 
+import java.util.Scanner;
+
 public class OperadoresLogicos {
 
 	public static void main(String[] args) {
 		// EXEMPLO: USO DE OPERADORES LÓGICOS
 
 		// Condições a serem testadas
-		boolean condicaoTrue = true;
-		boolean condicaoFalse = false;
-		
-		System.out.println("Exemplos com operadores E lógico (&&): Retorna true se ambas as condições forem true:");
-		System.out.println("True && True = " + (condicaoTrue && condicaoTrue));
-		System.out.println("False && False = " + (condicaoFalse && condicaoFalse));
-		System.out.println("True && False = " + (condicaoTrue && condicaoFalse));
-		System.out.println();
-
-		// Operador OU lógico (||)
-		System.out.println("Exemplos com operadores OU lógico (||): Retorna true se pelo menos uma das condições for true:");
-		System.out.println("True || True = " + (condicaoTrue || condicaoTrue));
-		System.out.println("False || False = " + (condicaoFalse || condicaoFalse));
-		System.out.println("True || False = " + (condicaoTrue || condicaoFalse));
-		System.out.println();
+		boolean condicao1 = true;
+		boolean condicao2 = false;
 
 		// Operador NÃO lógico (!)
 		System.out.println("Exemplos com operador NÃO lógico (!): Inverte o valor booleano (true vira false e vice-versa):");
-		System.out.println("!true = " + (!condicaoTrue));
-		System.out.println("!false = " + (!condicaoFalse));
+		System.out.println("!true = " + (!condicao1));
+		System.out.println("!false = " + (!condicao2));
 		System.out.println();
-		
-		
-		// EXEMPLO PRÁTICO COM MÚLTIPLAS CONDIÇÕES	
-		int idade = 25;
-		boolean temHabilitacao = false;
+
+		System.out.println("Exemplos com operadores E lógico (&&): Retorna true se ambas as condições forem true:");
+		System.out.println("True && True = " + (condicao1 && !condicao2));
+		System.out.println("False && False = " + (!condicao1 && condicao2));
+		System.out.println("True && False = " + (condicao1 && condicao2));
+		System.out.println();
+
+		// Operador OU lógico (||)
+		System.out.println(
+				"Exemplos com operadores OU lógico (||): Retorna true se pelo menos uma das condições for true:");
+		System.out.println("True || True = " + (condicao1 || !condicao2));
+		System.out.println("False || False = " + (!condicao1 || condicao2));
+		System.out.println("True || False = " + (condicao1 || condicao2));
+		System.out.println();
+
+		// EXEMPLO PRÁTICO COM MÚLTIPLAS CONDIÇÕES
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Informe sua idade: ");
+		int idade = sc.nextInt();
+
+		System.out.print("Possui habilitação? (true/false): ");
+		boolean temHabilitacao = sc.nextBoolean();
+
 		boolean podeDirigir = idade >= 18 && temHabilitacao;
-		
+
+		System.out.println();
 		System.out.println("Idade atual: " + idade);
 		System.out.println("Possui habilitação: " + temHabilitacao);
 		System.out.println("Pode dirigir? " + podeDirigir);
+
+		sc.close();
 	}
 
 }
