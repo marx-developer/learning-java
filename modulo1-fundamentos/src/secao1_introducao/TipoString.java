@@ -13,7 +13,7 @@ public class TipoString {
 
 	public static void main(String[] args) {
 		// MÉTODOS IMPORTANTES DA CLASSE STRING:
-		
+
 		String firstName = "Marx";
 		String secondName = "Santos";
 		int idade = 29;
@@ -39,7 +39,8 @@ public class TipoString {
 		System.out.println(frase.contains("Python"));
 		System.out.println();
 
-		System.out.println("5. startsWith() e endsWith() - Verificando se a String inicia e finaliza com determinada palavra");
+		System.out.println(
+				"5. startsWith() e endsWith() - Verificando se a String inicia e finaliza com determinada palavra");
 		System.out.println(frase.startsWith("Aprendendo"));
 		System.out.println(frase.endsWith("JavaScript"));
 		System.out.println();
@@ -68,29 +69,29 @@ public class TipoString {
 			System.out.println(lang);
 		}
 		System.out.println();
-		
+
 		System.out.println("10. equals() e equalsIgnoreCase() - Comparando Strings");
 		String palavra1 = "Java";
-        String palavra2 = "java";
-        System.out.println(palavra1.equals(palavra2)); 
-        System.out.println(palavra1.equalsIgnoreCase(palavra2));
-        System.out.println();
-        
-        System.out.println("11. String.format() - Formatando Strings");
-        String mensagem = String.format("Meu nome é %s dos %s e tenho %d anos.", firstName, secondName, idade);
-        System.out.println(mensagem);
-        System.out.println();
-        
-        System.out.println("12. String.valueOf() - Convertendo outros tipos para String");
-        int numero = 123;
-        double preco = 99.99;
-        boolean ativo = true;
-        String strNumero = String.valueOf(numero);
-        String strPreco = String.valueOf(preco);
-        String strAtivo = String.valueOf(ativo);
-        System.out.println(strNumero); 
-        System.out.println(strPreco); 
-        System.out.println(strAtivo); 
+		String palavra2 = "java";
+		System.out.println(palavra1.equals(palavra2));
+		System.out.println(palavra1.equalsIgnoreCase(palavra2));
+		System.out.println();
+
+		System.out.println("11. String.format() - Formatando Strings");
+		String mensagem = String.format("Meu nome é %s dos %s e tenho %d anos.", firstName, secondName, idade);
+		System.out.println(mensagem);
+		System.out.println();
+
+		System.out.println("12. String.valueOf() - Convertendo outros tipos para String");
+		int numero = 123;
+		double preco = 99.99;
+		boolean ativo = true;
+		String strNumero = String.valueOf(numero);
+		String strPreco = String.valueOf(preco);
+		String strAtivo = String.valueOf(ativo);
+		System.out.println(strNumero);
+		System.out.println(strPreco);
+		System.out.println(strAtivo);
 	}
 
 }
