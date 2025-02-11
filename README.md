@@ -32,7 +32,6 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Estrutura de repetição while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopWhile.java)
 - [Estrutura de repetição do-while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopDoWhile.java)
 - [Estrutura de repetição for-each](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopForEach.java)
-- 
 
 ## Classes, Objetos e Métodos
 
