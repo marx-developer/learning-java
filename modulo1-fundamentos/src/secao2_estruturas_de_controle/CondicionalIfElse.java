@@ -30,7 +30,7 @@ public class CondicionalIfElse {
 
 		System.out.println();
 
-		// EXEMPLO PRÁTICO 2: Verificando se pode dirigir com a condicional IF...ELSE
+		// EXEMPLO PRÁTICO 2: Verificando se pode dirigir.
 		System.out.print("Você possui habilitação? (true/false): ");
 		boolean possuiCNH = sc.nextBoolean();
 
