@@ -55,8 +55,7 @@ public class LoopFor {
 
 		System.out.println();
 
-		// EXEMPLO PRÁTICO 3: Percorrendo um Array para exibir mensagens com os nomes
-		// armazenados.
+		// EXEMPLO PRÁTICO 3: Percorrendo um Array para exibir mensagens com os nomes armazenados.
 		String[] nomesClientes = { "Marx", "Emily Beatriz", "Laura", "Leonardo" };
 
 		for (int i = 0; i < nomesClientes.length; i++) {
@@ -85,9 +84,9 @@ public class LoopFor {
 		for (int i = 0; i < valoresVendidos.length; i++) {
 			totalVendas += valoresVendidos[i]; // Soma cada venda ao total
 		}
-		
+
 		sc.nextLine();
-		
+
 		System.out.printf("VALOR TOTAL: R$ %.2f\n ", totalVendas);
 
 		// EXEMPLO PRÁTICO 6: Validação de Senha (Tentativas Limitadas)
@@ -106,9 +105,10 @@ public class LoopFor {
 				System.out.println("Senha incorreta! Tentativa " + tentativas + " de 3.");
 			}
 		}
-		sc.close();
 
 		System.out.printf("\nAcesso bloqueado!");
+
+		sc.close();
 
 	}
 
