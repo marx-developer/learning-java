@@ -1,27 +1,22 @@
-/* ESTRUTURA DE REPETIÇÃO FOR 
+/* ESTRUTURA DE REPETIÇÃO FOR (Para)
  * O for é uma estrutura de repetição controlada, usada para executar um bloco de código um número 
  * determinado de vezes. Ele é ideal quando sabemos quantas vezes queremos repetir uma ação.
  * 
- * Características do for:
- * Repetição controlada – O número de repetições é pré-definido.
- * Três partes principais – Inicialização, condição e atualização.
- * Eficiente para percorrer listas, arrays e contagens numéricas.
- * 
- * Sintaxe:
- 	for (inicialização; condição; atualização) {
-    	// Código a ser repetido
-	}
- * 
- * O loop for é composto por três partes principais: 
+ * * O FOR É COMPOSTO POR TRÊS PARTES PRINCIPAIS:
  * 1. Inicialização – Executada uma vez antes do loop começar.
  * 2. Condição – Verificada antes de cada iteração; se for false, o loop termina.
  * 3. Atualização – Executada após cada iteração, modificando a variável de controle.
  * 
- * Fluxo de execução: 
+ * SINTAXE:
+ 	for (inicialização; condição; atualização) {
+    	// Código a ser repetido
+	}
+ * 
+ * FLUXO DE EXECUÇÃO: 
  * 1. Executa a inicialização.
  * 2. Verifica a condição:
- * 		- Se true, executa o bloco de código.
- * 		- Se false, o loop termina.
+ * 	- Se true, executa o bloco de código.
+ * 	- Se false, o loop termina.
  * 3. Executa a atualização da variável.
  * 4. Repete o processo até a condição ser false.
  */
@@ -35,7 +30,7 @@ public class LoopFor {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// EXEMPLO PRÁTICO 1: Criando um contador de 1 a 5
+		// EXEMPLO PRÁTICO 1: Contador de 1 a 5
 		for (int i = 1; i <= 5; i++) {
 			// i = 1 → Começa o contator no 1.
 			// i <= 10 → Continua enquanto a variável i for menor ou igual a 5.
