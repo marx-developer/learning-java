@@ -48,35 +48,37 @@ public class LoopWhile {
 			System.out.printf("Valor inválido! \nTente novamente: ");
 			valorSaque = sc.nextInt();
 			tentativas++;
-			/* Este loop reperitá ate que o valor de saque seja múltiplo de 10 e o número de
-			 * tentativas for menor que 3. */
+			/*
+			 * Este loop reperitá ate que o valor de saque seja múltiplo de 10 e o número de
+			 * tentativas for menor que 3.
+			 */
 		}
-		
+
 		// Condicional caso o valor de saque seja multiplo de 0
 		if (valorSaque % 10 == 0) {
 			System.out.println("Saque de R$ " + valorSaque + " realizado com sucesso!");
-		} else { 
+		} else {
 			// Caso o número de tentativas seja maior que 3.
 			System.out.println("Número máximo de tentativas atingido. Operação cancelada.");
 		}
-		
+
 		sc.nextLine();
 
 		// EXEMPLO PRÁTICO 3: Validação de Senha
 		// O sistema permite apenas três tentativas para inserir a senha correta.
 		String senhaCorreta = "java2025";
 		int tentativasAcesso = 0;
-		
+
 		System.out.printf("\nDIGITE A SENHA PARA ACESSAR O SISTEMA: ");
 		String senhaInformada = sc.nextLine();
-				
+
 		while (!senhaInformada.equals(senhaCorreta) && tentativasAcesso < 2) {
 			System.out.println("\nSenha incorreta! Tente novamente.");
-            System.out.print("Digite a senha: ");
-            senhaInformada = sc.nextLine();
-            tentativasAcesso++;
+			System.out.print("Digite a senha: ");
+			senhaInformada = sc.nextLine();
+			tentativasAcesso++;
 		}
-		
+
 		if (senhaInformada.equals(senhaCorreta)) {
 			System.out.println("\nAcesso permitido!");
 		} else {
