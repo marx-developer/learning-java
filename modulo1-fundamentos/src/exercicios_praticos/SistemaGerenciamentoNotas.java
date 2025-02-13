@@ -3,6 +3,9 @@
  * saída de dados, estruturas condicionais avançadas (if-else, switch e operadores ternários),  
  * para implementar um sistema de gerenciamento de notas. Ele permite que o usuário insira as notas 
  * de um aluno, calcule a média e determine a situação acadêmica com base em critérios configuráveis.
+ * 
+ * 
+ * 
  */
 
 package exercicios_praticos;
