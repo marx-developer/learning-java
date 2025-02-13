@@ -2,15 +2,23 @@
  * O for é uma estrutura de repetição controlada, usada para executar um bloco de código um número 
  * determinado de vezes. Ele é ideal quando sabemos quantas vezes queremos repetir uma ação.
  * 
+ * 
  * * O FOR É COMPOSTO POR TRÊS PARTES PRINCIPAIS:
  * 1. Inicialização – Executada uma vez antes do loop começar.
  * 2. Condição – Verificada antes de cada iteração; se for false, o loop termina.
  * 3. Atualização – Executada após cada iteração, modificando a variável de controle.
  * 
+ * 
  * SINTAXE:
  	for (inicialização; condição; atualização) {
     	// Código a ser repetido
 	}
+ * 
+ * EXPLICAÇÃO DA SINTAXE:
+ * inicialização → Criação e definição do valor inicial da variável de controle.
+ * condição → Teste lógico que determina se o laço continuará executando.
+ * incremento/decremento → Modifica a variável de controle a cada iteração.
+ * 
  * 
  * FLUXO DE EXECUÇÃO: 
  * 1. Executa a inicialização.
