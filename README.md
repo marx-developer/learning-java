@@ -11,6 +11,8 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Variáveis e Constantes](/modulo1-fundamentos/src/secao1_introducao/Variaveis.java)
 - [Tipo de Dados Primitivos](/modulo1-fundamentos/src/secao1_introducao/TipoDeDadosPrimitivos.java)
 - [Tipo de Dados Não Primitivos](modulo1-fundamentos/src/secao1_introducao/TipoDeDadosPrimitivos.java)
+- [String](modulo1-fundamentos/src/secao1_introducao/TipoString.java)
+- [Array](modulo1-fundamentos/src/secao1_introducao/IntroducaoArray.java)
 - [Conversão de Tipos (casting)](modulo1-fundamentos/src/secao1_introducao/ConversaoDeTipos.java)
 - [Entrada de Dados](modulo1-fundamentos/src/secao1_introducao/EntradaDeDados.java)
 - [Saída de Dados](modulo1-fundamentos/src/secao1_introducao/SaidaDeDados.java)
@@ -18,20 +20,19 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 - [Operadores de Atribuição ](modulo1-fundamentos/src/secao1_introducao/OperadoresAtribuicao.java)
 - [Operadores de Comparação ](modulo1-fundamentos/src/secao1_introducao/OperadoresComparacao.java)
 - [Operadores Lógicos ](modulo1-fundamentos/src/secao1_introducao/OperadoresLogicos.java)
-- [String](modulo1-fundamentos/src/secao1_introducao/TipoString.java)
-- [Operações Matemáticas](modulo1-fundamentos/src/secao1_introducao/OperacoesMatematicas.java)
+- [Operações Matemáticas - Classe Math](modulo1-fundamentos/src/secao1_introducao/OperacoesMatematicas.java)
 
 ## Estruturas de Controle
 
-- [Estrutura condicional if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIf.java)
-- [Estrutura condicional if-else](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElse.java)
-- [Estrutura condicional if-else if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElseIf.java)
+- [Estrutura Condicional if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIf.java)
+- [Estrutura Condicional if-else](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElse.java)
+- [Estrutura Condicional if-else if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElseIf.java)
 - [Estrutura Condicional switch](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalSwitch.java)
 - [Operador Ternário](modulo1-fundamentos/src/secao2_estruturas_de_controle/OperadorTernario.java)
-- [Estrutura de repetição for](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopFor.java)
-- [Estrutura de repetição while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopWhile.java)
-- [Estrutura de repetição do-while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopDoWhile.java)
-- [Estrutura de repetição for-each](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopForEach.java)
+- [Estrutura de Repetição for](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopFor.java)
+- [Estrutura de Repetição while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopWhile.java)
+- [Estrutura de Repetição do-while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopDoWhile.java)
+- [Estrutura de Repetição for-each](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopForEach.java)
 
 ## Classes, Objetos e Métodos
 
