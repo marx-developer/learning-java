@@ -26,9 +26,9 @@ public class SistemaGestaoEstoque {
 		Scanner sc = new Scanner(System.in);
 		int opcaoMenu; // Variável para armazenar a escolha do usuário.
 
-		String[] prodCadatrados = new String[10];
-		int[] qtdProd = new int[10];
-		int totalProd = 0;
+		String[] prodCadatrados = {"Arroz", "Feijão", "Macarrão", "Açucar", "Leite", "Oleo"};
+		int[] qtdProd = {5, 4, 5, 4, 3, 2} ;
+		int totalProd = 5;
 
 		System.out.printf("================== GESTÃO DE ESTOQUE ==================\n");
 		while (true) {
@@ -50,79 +50,91 @@ public class SistemaGestaoEstoque {
 			}
 
 			switch (opcaoMenu) {
-			case 1 -> {
-				if (totalProd >= prodCadatrados.length) {
-					System.out.printf("\nEstoque cheio! Não é possível cadastrar mais produtos.\n");
-				} else {
-					System.out.print("\nNome do produto: ");
-					prodCadatrados[totalProd] = sc.nextLine();
-
-					do {
-						System.out.print("Quantidade: ");
-						qtdProd[totalProd] = sc.nextInt();
-					} while (qtdProd[totalProd] < 0);
-
-					totalProd++;
-					System.out.printf("\nProduto cadastrado com sucesso!\n");
-				}
-				break;
-			}
-			case 2 -> {
-				System.out.printf("\nDigite o nome do produto para adicionar estoque: ");
-				String addProd = sc.nextLine();
-				boolean prodAddLoc = false;
-
-				for (int i = 0; i < totalProd; i++) {
-					if (prodCadatrados[i].equalsIgnoreCase(addProd)) {
-						System.out.print("Quantidade a adicionar: ");
-						int qtdAdd = sc.nextInt();
-						if (qtdAdd > 0) {
-							qtdProd[i] += qtdAdd;
-							System.out.println("Estoque atualizado!");
-						} else {
-							System.out.println("Quantidade inválida!");
-						}
-						prodAddLoc = true;
-						break;
+				case 1 -> {
+					if (totalProd >= prodCadatrados.length) {
+						System.out.printf("\nEstoque cheio! Não é possível cadastrar mais produtos.\n");
+					} else {
+						System.out.print("\nNome do produto: ");
+						prodCadatrados[totalProd] = sc.nextLine();
+	
+						do {
+							System.out.print("Quantidade: ");
+							qtdProd[totalProd] = sc.nextInt();
+						} while (qtdProd[totalProd] < 0);
+	
+						totalProd++;
+						System.out.printf("\nProduto cadastrado com sucesso!\n");
 					}
-				}
-				if (!prodAddLoc)
-					System.out.printf("\nProduto não encontrado!\n");
-				break;
-			}
-			case 3 -> {
-				System.out.printf("\nQual produto deseja remover estoque: ");
-				String removerProd = sc.nextLine();
-				boolean prodRemLoc = false;
-
-				for (int i = 0; i < totalProd; i++) {
-					if (prodCadatrados[i].equalsIgnoreCase(removerProd)) {
-						System.out.printf("\nQuantidade a remover: ");
-						int qtdRem = sc.nextInt();
-						if (qtdRem > 0 && qtdRem <= qtdProd[i]) {
-							qtdProd[i] -= qtdRem;
-							System.out.println("Estoque atualizado!");
-						} else {
-							System.out.printf("\nQuantidade inválida!");
-						}
-					}
-					prodRemLoc = true;
 					break;
 				}
-				if (!prodRemLoc)
-					System.out.printf("\nProduto não encontrado!\n");
-				break;
-			}
-			case 4 -> {
-				System.out.printf("\nEstoque Atual:");
-				for (int i = 0; i < totalProd; i++) {
-					System.out.println("📦 " + prodCadatrados[i] + " ➝ " + qtdProd[i] + " unidades");
+				case 2 -> {
+					
+					// Exibindo produtos 
+					for (int i = 0; i < totalProd; i++) {
+						System.out.println(prodCadatrados[i] + " ➝ " + qtdProd[i] + " unidades");
+					}
+					
+					System.out.printf("\nDigite o nome do produto para adicionar estoque: ");
+					String addProd = sc.nextLine();
+					boolean prodAddLoc = false;
+					
+					for (int i = 0; i < totalProd; i++) {
+						if (prodCadatrados[i].equalsIgnoreCase(addProd)) {
+							System.out.print("Quantidade a adicionar: ");
+							int qtdAdd = sc.nextInt();
+							if (qtdAdd > 0) {
+								qtdProd[i] += qtdAdd;
+								System.out.println("Estoque atualizado!");
+							} else {
+								System.out.println("Quantidade inválida!");
+							}
+							prodAddLoc = true;
+							break;
+						}
+					}
+					if (!prodAddLoc)
+						System.out.printf("\nProduto não encontrado!\n");
+					break;
 				}
-				break;
-			}
+				case 3 -> {
+					// Exibindo produtos 
+					for (int i = 0; i < totalProd; i++) {
+						System.out.println(prodCadatrados[i] + " ➝ " + qtdProd[i] + " unidades");
+					}
+					
+					System.out.printf("\nQual produto deseja remover estoque: ");
+					String removerProd = sc.nextLine();
+					boolean prodRemLoc = false;
+	
+					for (int i = 0; i < totalProd; i++) {
+						if (prodCadatrados[i].equalsIgnoreCase(removerProd)) {
+							System.out.printf("\nQuantidade a remover: ");
+							int qtdRem = sc.nextInt();
+							if (qtdRem > 0 && qtdRem <= qtdProd[i]) {
+								qtdProd[i] -= qtdRem;
+								System.out.println("Estoque atualizado!");
+							} else {
+								System.out.printf("\nQuantidade inválida!");
+							}
+						}
+						prodRemLoc = true;
+						break;
+					}
+					if (!prodRemLoc)
+						System.out.printf("\nProduto não encontrado!\n");
+					break;
+				}
+				case 4 -> {
+					System.out.printf("\nESTOQUE ATUAL: \n");
+					// Exibindo produtos 
+					for (int i = 0; i < totalProd; i++) {
+						System.out.println(prodCadatrados[i] + " ➝ " + qtdProd[i] + " unidades");
+					}
+					break;
+				}
 			} // Final do switch
 
-		}
+		} // Final do while
 		sc.close();
 	}
 }
