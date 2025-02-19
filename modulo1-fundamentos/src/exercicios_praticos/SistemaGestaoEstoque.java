@@ -30,14 +30,14 @@ public class SistemaGestaoEstoque {
 		ArrayList<String> prodCadatrados = new ArrayList<>();
 		prodCadatrados.add("Arroz");
 		prodCadatrados.add("Feijão");
-		prodCadatrados.add("Macarrão");
+		prodCadatrados.add("Sal");
 		prodCadatrados.add("Açucar");
 		
-		ArrayList<Integer> qtdProd = new ArrayList<>();
-		qtdProd.add(10);
-		qtdProd.add(15);
-		qtdProd.add(18);
-		qtdProd.add(5);
+		ArrayList<Integer> qtdProdCad = new ArrayList<>();
+		qtdProdCad.add(10);
+		qtdProdCad.add(15);
+		qtdProdCad.add(18);
+		qtdProdCad.add(5);
 
 		/*String[] prodCadatrados = new String[] { "Arroz", "Feijão", "Macarrão", "Açucar", "Leite", "Oleo" };
 		int[] qtdProd = new int[] { 5, 4, 5, 4, 3, 2 };
@@ -66,24 +66,29 @@ public class SistemaGestaoEstoque {
 				System.out.printf("\nOpção Inválida. Tente novamente!\n");
 			}
 
-			// Condicional com switch para as demais ecolhas.
+			// Condicional com switch para as demais escolhas.
 			switch (opcaoMenu) {
 			case 1 -> {
-				// Recebendo o nome do produto
+				// Recebendo o nome do produto para ser adicionado no sistema.
 				System.out.printf("\nDigite o nome do produto: ");
-				String addNewProd = sc.nextLine(); // Armazenando o nome do produto na variável
+				String addNewProd = sc.nextLine();
 
-				// Loop caso o produto já esteja em estoque
-				for (int i = 0; i < prodCadatrados.size();) {
-					if (prodCadatrados.get(i).contains(addNewProd)) {
+				// Verificando se o produto já existe em estoque.
+				for (int i = 0; i < prodCadatrados.size(); i++) {
+					// Capturando o índice do produto no array se ele já estiver em estoque.
+					int iProdCad = prodCadatrados.indexOf(addNewProd);
+					
+					// Condicional caso o produto ja esteja em estoque.
+					if (prodCadatrados.contains(addNewProd)) {
 						System.out.printf("\nProduto em estoque. Deseja adicionar estoque? (Sim/Nao): ");
 						String respNewProd = sc.nextLine();
+						
 						if (respNewProd.equalsIgnoreCase("Sim")) {
 							System.out.printf("\nQuantidade a adicionar: ");
 							int qtdAdd = sc.nextInt();
 							if (qtdAdd > 0) {
-								
-								qtdProd.set(i, qtdAdd);
+								// Adicionando o quantidade do produto e somando ao valor atual.
+								qtdProdCad.set(iProdCad, qtdProdCad.get(iProdCad) + qtdAdd);
 								System.out.printf("\nEstoque atualizado! Retornando ao menu...\n");
 								System.out.printf("\n============================================================\n");
 							} else {
@@ -99,11 +104,12 @@ public class SistemaGestaoEstoque {
 						}
 						break;
 					} else {
+						// Adicionando o produto em estoque caso não esteja cadastrado.
 						prodCadatrados.add(addNewProd);
+						
 						System.out.print("Quantidade: ");
 						int qtdAdd = sc.nextInt();
-						prodCadatrados.add(addNewProd);
-						qtdProd.add(qtdAdd);
+						qtdProdCad.add(qtdAdd);
 
 						System.out.printf("\nProduto cadastrado com sucesso! Retornando ao menu...\n");
 						System.out.printf("\n============================================================\n");
@@ -175,9 +181,9 @@ public class SistemaGestaoEstoque {
 				System.out.printf("\n====================== ESTOQUE  ATUAL ======================\n\n");
 				// Exibindo produtos
 				for (int i = 0; i < prodCadatrados.size(); i++) {
-					System.out.println(prodCadatrados.get(i) + ": " + qtdProd.get(i) + " unidades");
+					System.out.println(prodCadatrados.get(i) + ": " + qtdProdCad.get(i) + " unidades");
 				}
-				
+				System.out.printf("\n============================================================\n");
 				break;
 			}
 			} // Final do switch
