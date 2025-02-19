@@ -117,12 +117,12 @@ public class SistemaGestaoEstoque {
 					}
 				}
 
-			}/*
+			}
 			case 2 -> {
 				// Exibindo produtos cadastrados
 				System.out.printf("\n=================== PRODUTOS CADASTRADOS ===================\n\n");
 				for (int i = 0; i < prodCadatrados.size(); i++) {
-					System.out.println(prodCadatrados.get(i) + ": " + qtdProd.get(i) + " unidades");
+					System.out.println(prodCadatrados.get(i) + ": " + qtdProdCad.get(i) + " unidades");
 				}
 				// Recebendo o nome do produto
 				System.out.printf("\nDigite o nome do produto para adicionar estoque: ");
@@ -130,24 +130,30 @@ public class SistemaGestaoEstoque {
 				boolean prodAddLoc = false;
 
 				for (int i = 0; i < prodCadatrados.size(); i++) {
+					int iProdCad = prodCadatrados.indexOf(addEstoProd);
+					
 					if (prodCadatrados.contains(addEstoProd)) {
 						System.out.print("Quantidade a adicionar: ");
 						int qtdAdd = sc.nextInt();
 						if (qtdAdd > 0) {
-							qtdProd.add(qtdAdd);
-							System.out.println("\nEstoque atualizado!");
+							qtdProdCad.set(iProdCad, qtdProdCad.get(iProdCad) + qtdAdd);
+							System.out.printf("\nEstoque atualizado! Retornando ao menu...\n");
+							System.out.printf("\n============================================================\n");
 						} else {
-							System.out.println("Quantidade inválida! Retornando ao menu...");
+							System.out.printf("Quantidade inválida! Retornando ao menu...\n");
+							System.out.printf("\n============================================================\n");
 						}
 						prodAddLoc = true;
 						break;
 					} 
 				}
-				if (!prodAddLoc)
+				if (!prodAddLoc) {
 					System.out.printf("\nProduto não encontrado! Retornando ao menu...\n");
-				System.out.printf("\n============================================================\n");
+					System.out.printf("\n============================================================\n");
+				}
+					
 				break;
-			}
+			}/*
 			case 3 -> {
 				// Exibindo produtos cadastrados
 				System.out.printf("\n============== PRODUTOS CADASTRADOS ==============\n\n");
