@@ -4,72 +4,19 @@ Este repositório foi criado com a finalidade de registra minha jornada de apren
 
 Os códigos estão organizados de acordo com os temas abordados durante os estudos:
 
-## Introdução
+## Módulos
 
-- [Estrutura Básica](/modulo1-fundamentos/src/secao1_introducao/EstruturaBasica.java) 
-- [Comentários](/modulo1-fundamentos/src/secao1_introducao/)
-- [Variáveis e Constantes](/modulo1-fundamentos/src/secao1_introducao/Variaveis.java)
-- [Tipo de Dados Primitivos](/modulo1-fundamentos/src/secao1_introducao/TipoDeDadosPrimitivos.java)
-- [Tipo de Dados Não Primitivos](modulo1-fundamentos/src/secao1_introducao/TipoDeDadosPrimitivos.java)
-- [String](modulo1-fundamentos/src/secao1_introducao/TipoString.java)
-- [Array](modulo1-fundamentos/src/secao1_introducao/IntroducaoArray.java)
-- [Conversão de Tipos (casting)](modulo1-fundamentos/src/secao1_introducao/ConversaoDeTipos.java)
-- [Entrada de Dados](modulo1-fundamentos/src/secao1_introducao/EntradaDeDados.java)
-- [Saída de Dados](modulo1-fundamentos/src/secao1_introducao/SaidaDeDados.java)
-- [Operadores Aritméticos ](modulo1-fundamentos/src/secao1_introducao/OperadoresArtmeticos.java)
-- [Operadores de Atribuição ](modulo1-fundamentos/src/secao1_introducao/OperadoresAtribuicao.java)
-- [Operadores de Comparação ](modulo1-fundamentos/src/secao1_introducao/OperadoresComparacao.java)
-- [Operadores Lógicos ](modulo1-fundamentos/src/secao1_introducao/OperadoresLogicos.java)
-- [Operações Matemáticas - Classe Math](modulo1-fundamentos/src/secao1_introducao/OperacoesMatematicas.java)
-
-## Estruturas de Controle
-
-- [Estrutura Condicional if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIf.java)
-- [Estrutura Condicional if-else](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElse.java)
-- [Estrutura Condicional if-else if](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalIfElseIf.java)
-- [Estrutura Condicional switch](modulo1-fundamentos/src/secao2_estruturas_de_controle/CondicionalSwitch.java)
-- [Operador Ternário](modulo1-fundamentos/src/secao2_estruturas_de_controle/OperadorTernario.java)
-- [Estrutura de Repetição for](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopFor.java)
-- [Estrutura de Repetição while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopWhile.java)
-- [Estrutura de Repetição do-while](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopDoWhile.java)
-- [Estrutura de Repetição for-each](modulo1-fundamentos/src/secao2_estruturas_de_controle/LoopForEach.java)
-
-## Classes, Objetos e Métodos
-
-- [Introdução à Classes]()
-- [Introdução à Métodos]()
-
-## Estruturas de Dados e APIs Java
-
-
-
-## Programação Orientada a Objetos
-
-
-
-## Programação Funcional
-
-
-
-## Tratamento de Exceções
-
-
-
-## Desenvolvimento Desktop e Banco de Dados
-
-
-
-## Desenvolvimento Web
-
-
-
-## Paralelismo e Concorrência
-
-
-
-## Exercícios Práticos
-
-
+1. [Fundamentos Básicos](/modulo1-fundamentos_basicos)
+2. [Estruturas de Controle](/modulo2-estruturas_de_controle)
+3. [Classes e Métodos]()
+4. [Arrays e Collections]()
+5. [Programação Orientada a Objetos]()
+6. [Programação Funcional ]()
+7. [Tratamento de Exceções]()
+8. [Desenvolvimento Desktop e Banco de Dados]()
+9. [Desenvolvimento Web]()
+10. [Paralelismo e Concorrência]()
 
 ## Projetos Desenvolvidos
+
 
