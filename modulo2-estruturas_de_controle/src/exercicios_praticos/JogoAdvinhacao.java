@@ -44,6 +44,8 @@ public class JogoAdvinhacao {
 				break; // Sai do loop quando o usuário acerta
 			}
 		}
+		
+		sc.close();
 
 	}
 
