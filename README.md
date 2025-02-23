@@ -8,7 +8,7 @@ Os códigos estão organizados de acordo com os temas abordados durante os estud
 
 1. [Fundamentos Básicos](/modulo1-fundamentos_basicos)
 2. [Estruturas de Controle](/modulo2-estruturas_de_controle)
-3. [Métodos e Classes ]()
+3. [Classes e Métodos](/modulo3-classes_e_metodos)
 4. [Arrays e Collections]()
 5. [Programação Orientada a Objetos]()
 6. [Programação Funcional ]()
