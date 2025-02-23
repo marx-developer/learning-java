@@ -92,25 +92,6 @@ public class LoopFor {
 
 		System.out.printf("VALOR TOTAL: R$ %.2f\n ", totalVendas);
 
-		// EXEMPLO PRÁTICO 6: Validação de Senha (Tentativas Limitadas)
-		// O sistema permite apenas três tentativas para inserir a senha correta.
-		String senhaCorreta = "java2025";
-		String senhaInformada;
-
-		for (int tentativas = 1; tentativas <= 3; tentativas++) {
-			System.out.printf("\nDigite a senha: ");
-			senhaInformada = sc.nextLine();
-
-			if (senhaInformada.equals(senhaCorreta)) {
-				System.out.println("Acesso permitido!");
-				return;
-			} else {
-				System.out.println("Senha incorreta! Tentativa " + tentativas + " de 3.");
-			}
-		}
-
-		System.out.printf("\nAcesso bloqueado!");
-
 		sc.close();
 
 	}
